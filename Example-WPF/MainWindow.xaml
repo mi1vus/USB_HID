@@ -1,0 +1,68 @@
+﻿<Window x:Class="Example_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Example_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="450" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <GridSplitter Grid.Column="0" Grid.Row="0" Width="4"/>
+
+            <GroupBox Grid.Column="0" Header="Параметры устройства">
+                <StackPanel>
+                    <Label Content="PID (hex-формат):" Margin="2"/>
+                    <TextBox Text="2301" MaxLength="4" x:Name="textBox_Dev_PID" Margin="2" TextAlignment="Center"/>
+                    <Separator/>
+
+                    <Label Content="VID (hex-формат):" Margin="2"/>
+                    <TextBox Text="C251" MaxLength="4" x:Name="textBox_Dev_VID" Margin="2" TextAlignment="Center"/>
+                    <Separator/>
+
+
+                    <Button Content="Подключиться" x:Name="button_Dev_Connect" Click="button_Dev_Connect_Click" Margin="2"/>
+                    <Button Content="Отключиться" x:Name="button_Dev_Disconnect" Click="button_Dev_Disconnect_Click" Margin="2"/>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Grid.Column="1" Header="Прочитанные параметры устройства">
+                <StackPanel>
+                    <Label Content="Product:" Margin="2"/>
+                    <TextBox IsReadOnly="True" x:Name="textBox_Dev_Product" Margin="2" TextAlignment="Center"/>
+                    <Separator/>
+
+                    <Label Content="Vendor:" Margin="2"/>
+                    <TextBox IsReadOnly="True" x:Name="textBox_Dev_Vendor" Margin="2" TextAlignment="Center"/>
+                    <Separator/>
+
+                    <Label Content="Input Report Length (байт):" Margin="2"/>
+                    <TextBox IsReadOnly="True" x:Name="textBox_Dev_IRL" Margin="2" TextAlignment="Center"/>
+                    <Separator/>
+
+                    <Label Content="Output Report Length (байт):" Margin="2"/>
+                    <TextBox IsReadOnly="True" x:Name="textBox_Dev_ORL" Margin="2" TextAlignment="Center"/>
+                    <Separator/>
+
+                    <Label Content="Feature Report Length (байт):" Margin="2"/>
+                    <TextBox IsReadOnly="True" x:Name="textBox_Dev_FRL" Margin="2" TextAlignment="Center"/>
+                </StackPanel>
+            </GroupBox>
+        </Grid>
+
+        <StatusBar Grid.Row="1">
+            <StatusBarItem>
+                <Label x:Name="Dev_StatusLabel"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>
