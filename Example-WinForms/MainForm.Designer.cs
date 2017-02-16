@@ -55,14 +55,23 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -73,7 +82,7 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Dev_StatusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 307);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 422);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 19, 0);
             this.statusStrip1.Size = new System.Drawing.Size(1304, 22);
@@ -316,7 +325,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(643, 194);
+            this.textBox1.Location = new System.Drawing.Point(643, 363);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(448, 22);
@@ -364,66 +373,33 @@
             this.button5.TabIndex = 15;
             this.button5.Text = "auth0";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.auth0_Click);
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(703, 249);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(53, 25);
-            this.button6.TabIndex = 16;
-            this.button6.Text = "auth1";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.auth1_Click);
+            this.button5.Click += new System.EventHandler(this.auth_Click);
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(762, 249);
+            this.button7.Location = new System.Drawing.Point(644, 278);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(53, 25);
             this.button7.TabIndex = 17;
             this.button7.Text = "read0";
             this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.read0_Click);
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(821, 249);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(54, 25);
-            this.button8.TabIndex = 18;
-            this.button8.Text = "read4";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.read1_Click);
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(965, 249);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(78, 25);
-            this.button9.TabIndex = 20;
-            this.button9.Text = "write4_00";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.write4_00_Click);
+            this.button7.Click += new System.EventHandler(this.read_Click);
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(881, 249);
+            this.button10.Location = new System.Drawing.Point(644, 305);
             this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(78, 25);
             this.button10.TabIndex = 19;
             this.button10.Text = "write4_44";
             this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.write4_44_Click);
+            this.button10.Click += new System.EventHandler(this.write_Click);
             // 
             // button11
             // 
-            this.button11.Location = new System.Drawing.Point(643, 278);
+            this.button11.Location = new System.Drawing.Point(643, 334);
             this.button11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(54, 25);
@@ -434,7 +410,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(793, 221);
+            this.textBox2.Location = new System.Drawing.Point(785, 249);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(298, 22);
@@ -452,19 +428,145 @@
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(703, 334);
+            this.button13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(54, 25);
+            this.button13.TabIndex = 24;
+            this.button13.Text = "CRC";
+            this.button13.UseVisualStyleBackColor = true;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(763, 334);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(434, 22);
+            this.textBox3.TabIndex = 25;
+            this.textBox3.Text = "01 56 69 56 4F 74 65 63 68 32 00 2C 08 00 12 31 04 44 44 44 44 44 44 44 44 44 44 " +
+    "44 44 44 44 44 44";
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(1159, 210);
+            this.button14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(54, 25);
+            this.button14.TabIndex = 26;
+            this.button14.Text = "CRC";
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(632, 201);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(61, 17);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Product:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(703, 278);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(34, 22);
+            this.textBox4.TabIndex = 27;
+            this.textBox4.Text = "8";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(728, 305);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(29, 22);
+            this.textBox5.TabIndex = 28;
+            this.textBox5.Text = "4";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(802, 305);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(490, 22);
+            this.textBox6.TabIndex = 29;
+            this.textBox6.Text = "00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(1204, 334);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(61, 17);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "Product:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(703, 249);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(29, 22);
+            this.textBox7.TabIndex = 31;
+            this.textBox7.Text = "8";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "A",
+            "B"});
+            this.comboBox1.Location = new System.Drawing.Point(738, 249);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(41, 24);
+            this.comboBox1.TabIndex = 33;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(743, 278);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(34, 22);
+            this.textBox8.TabIndex = 34;
+            this.textBox8.Text = "4";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(762, 305);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(34, 22);
+            this.textBox9.TabIndex = 35;
+            this.textBox9.Text = "1";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1304, 329);
+            this.ClientSize = new System.Drawing.Size(1304, 444);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button11);
-            this.Controls.Add(this.button9);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -523,14 +625,23 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }
 
